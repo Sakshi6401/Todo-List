@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="todo.css">
+    <script src="todo.js"></script>
+    <title>TO-DO LIST</title>
+  </head>
+  <body>
+    <h1><centre>TODO LIST</centre></h1>
+    <div class="todo-form">
+      <input type="text" id="new_item" class="todo-input">
+      <button onclick="addItem()" class="add-button">Add Item</button>
+      <span><p id="error"></p></span>
+    </div>
+    <!-- 1. Create list -->
+    <!-- 2. Give 2 default list items -->
+    <br><br>
+    <!-- 3. Display list -->
+    <div id="display" id="container">
+      <h4>Your List:</h4>
+      <ul class="todo-items" id="list">
+        <h5 id="init">Nothing In List For Now<br>Add Items</h4>
+        <script type="text/javascript">
+          listItems.forEach(displayList);
+        </script>
+      </ul>
+    </div>    
+    <!-- 4. Add items to list list -->
+  </body>
+</html>
