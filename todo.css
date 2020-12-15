@@ -1,0 +1,120 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+  body {
+    justify-content: center;
+    background: rgba(5, 157, 177, 0.603);
+    font-family: sans-serif;
+  }
+
+    button:hover {
+      cursor: pointer;
+      background-color: #e69f428f;
+    }
+
+    ul {
+      list-style-type: none;
+      text-align: center;
+      justify-items: center;
+    }
+
+    /* common style ends */ /* container */
+    .container {
+      min-width: 500px;
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      padding: 20px;
+    }
+    h1{
+      margin-top: 20px;
+      color: rgba(104, 16, 144, 0.959);
+      font-size: 4rem;
+      text-shadow: 3px 3px rgba(12, 5, 104, 0.281);
+      margin-left: 35%;
+    }
+    h4{
+      color: rgb(50, 4, 94);
+      font-size: 3rem;
+      text-shadow: 3px 3px rgba(165, 42, 42, 0.377);
+      margin-left: 39%;
+    }
+
+     /* todo-form */
+
+     .todo-form {
+       margin-left: 35%;
+       margin-top: 5%;
+      }
+
+      .todo-input {
+        width: 250px;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        padding: 10px;
+        margin-right: 10px;
+        font-size: 1rem;
+      }
+
+      .add-button {
+        background-color: #0202f393;
+        color: #fff;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        padding: 7px;
+        font-size: 1.2rem;
+      }
+
+      /* todo-form style ends */ /* todo-items */
+      .todo-items {
+        min-width: 350px;
+      }
+
+      #init{
+        background-color: cornflowerblue;
+        margin-top: 40px;
+        margin-left: 30%;
+        margin-right: 30%;
+      }
+      /* each li with class="item" */
+      .item {
+        background-color: rgba(118, 231, 12, 0.26);
+        padding: 10px;
+        text-align: start;
+        margin: 0 20% 0 20%;
+        font-size: 1.5rem;
+      }
+
+      .item:first-child {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+      }
+
+      .item:last-child {
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+      }
+
+      /* item style end */
+      .checkbox{
+         margin-top: 15px;
+         margin-right: 10px;
+         margin-left: 42%;
+         float: left;
+         cursor: pointer;
+      }
+
+      #error{
+        font-style: italic;
+        font-weight: bold;
+        color: rgba(255, 5, 5, 0.548);
+      }
+
+      /* applied when the todo item is checked */
+      .checked {
+        text-decoration: line-through;
+      }/* todo-items style ends */ /* container style ends */
